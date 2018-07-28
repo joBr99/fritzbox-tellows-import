@@ -1,0 +1,3 @@
+[submodule "lib/fritzbox_api_php"]
+	path = lib/fritzbox_api_php
+	url = https://github.com/joBr99/fritzbox_api_php

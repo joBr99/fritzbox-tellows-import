@@ -138,7 +138,7 @@ class CardDAV2FB
           echo "HTTP request failed. Error was: " . $error['message'];
           exit(1);
       }
-      $file_len = strlen ($data);
+      $file_len = strlen($data);
       print " Downloaded $file_len bytes successfully." . PHP_EOL;
 
       $root = new SimpleXMLElement($data);

@@ -138,8 +138,16 @@ class CardDAV2FB
           echo "HTTP request failed. Error was: " . $error['message'];
           exit(1);
       }
+      $file_len = strlen ($data);
+      print " Downloaded $file_len bytes successfully." . PHP_EOL;
 
       $root = new SimpleXMLElement($data);
+
+      if(array_key_exists('add_date', $this->config) && $this->config['add_date']){
+        // Add Date and Time
+        $phonebook_name = $root->phonebook['name'];
+        $root->phonebook['name'] = "$phonebook_name " . date("m.d.y H:i:s");
+      }
 
       if($root->asXML() !== false)
         $this->fbxml = $root->asXML();

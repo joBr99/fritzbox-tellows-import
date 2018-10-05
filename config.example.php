@@ -26,4 +26,4 @@ $config['score89_url'] = 'tellows Download LINK';
 // $config['output_file'] = '/tmp/tellows_file.xml';
 
 // Add Date to phonebook name
-$config['add_date'] = true;
+// $config['add_date'] = true;

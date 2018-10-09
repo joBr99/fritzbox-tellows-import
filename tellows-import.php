@@ -146,7 +146,7 @@ class CardDAV2FB
       if(array_key_exists('add_date', $this->config) && $this->config['add_date']){
         // Add Date and Time
         $phonebook_name = $root->phonebook['name'];
-        $root->phonebook['name'] = "$phonebook_name " . date("m.d.y H:i:s");
+        $root->phonebook['name'] = "$phonebook_name " . date("d.m.y H:i:s");
       }
 
       if($root->asXML() !== false)

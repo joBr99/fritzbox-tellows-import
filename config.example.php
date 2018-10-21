@@ -21,3 +21,9 @@ $config['phonebook_number_Score89'] = '2';
 // download links form tellows api pdf
 $config['score7_url'] = 'tellows Download LINK';
 $config['score89_url'] = 'tellows Download LINK';
+
+// Just download Tellows file
+// $config['output_file'] = '/tmp/tellows_file.xml';
+
+// Add Date to phonebook name
+// $config['add_date'] = true;

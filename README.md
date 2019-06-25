@@ -2,11 +2,25 @@
 PHP Script that downloads tellow Score list and uploads it to fritzbox phonebooks
 
 
-
 Anleitung zur Installation und Nutzung gibt's hier:
 
 https://byte-wiese.de/2018/07/tellows-scorelisten-automatisch-in-ein-fritzbox-telefonbuch-importieren/
 
+
+
+
+
+
+### Setup Instructions ###
+
+1. Clone Repository to a location of your choise
+`git clone –-recursive https://github.com/joBr99/fritzbox-tellows-import.git`
+2. Copy configuration file
+`cp config.example.php config.php`
+3. Adjust configuration to fit your needs
+4. Configure an cronjob or something similar to run the PHP Script periodically.
+`(crontab -l ; echo "0 0 */10 * * php /opt/fritzbox-tellows-import/tellows-import.php >/dev/null 2>&1
+") | crontab -`
 
 
 
